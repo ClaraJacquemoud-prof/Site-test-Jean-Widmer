@@ -1,0 +1,82 @@
+body{
+  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 300vh;
+}
+
+main{
+  position : fixed;
+}
+
+#legende{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1{
+  font-size: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sous_titre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sous_titre h3{
+  margin-right: 20px;
+}
+
+.conteneur_cercle{
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+  background-color: white;
+  display: block;
+  position: absolute;
+  mask-image: url(../img/cercle_simple.svg);
+  margin: 5px;
+}
+
+.cercle{
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+  mask-image: url(../img/cercle.svg);
+}
+
+#conteneurIMG{
+  position: relative;
+  width: 450px;
+  height: 450px;
+  left: 50vw;
+  transform: translate(-50%);
+}
+
+#cercle1{
+  left: 0px;
+  top: 0px;
+}
+
+#cercle2{
+  right: 0px;
+  top: 0px;
+  transform: rotate(90deg);
+}
+
+#cercle3{
+  left: 0px;
+  bottom: 0px;
+  transform: rotate(237deg);
+}
+
+#cercle4{
+  right: 0px;
+  bottom: 0px;
+  transform: rotate(160deg);
+}
